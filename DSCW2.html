@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Analysis: Astroworld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="author" content="Bex Sander">
+    <meta name="description" content="A timeline of Twitter activity concerning the Astroworld 2021 Festival and consequent fallout">
+    <meta name="keywords" content="astroworld, conspiracy, qanon, analysis">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
+    <link href="js-docs/c3.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js-docs/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js-docs/c3.min.js"></script>
+    <style>
+      body {
+        font-family: "Roboto Condensed", sans-serif;
+        color: #2b323b;
+      }
+      h1 {
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        font-size: 20px;
+        color: #2b323b;
+      }
+      h4 {
+        font-family: "Roboto", sans-serif;
+        color: #6c7483;
+      }
+      .uk-card-body {
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:link {
+        color: #2b323b;
+      }
+      .caption {
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div uk-sticky class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(alexander-londono-fyHcBJKawPE-unsplash.jpg);"></div> -->
+
+    <div id="start" class="uk-height-viewport uk-inline uk-width-1-1">
+      <div class="uk-container uk-position-center">
+            <h1 class="uk-text-center">Astroworld and the Twitter Conspiracy Theory Rabbit-Hole</h1>
+            <h4 class=uk-text-center>By Bex Sander, 17/01/2022</h4>
+            <a href="#intro" data-uk-scroll="" class="uk-position-center"><svg width="80" height="80" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#2b323b" stroke-width="1.03" points="16 7 10 13 4 7" class="uk-visible@m"></polyline></svg></a>
+          </div>
+            <div class="uk-text uk-position-top-right">
+        <div class="caption">Photo by <a href="https://unsplash.com/@thefirmhtx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Londoño</a> on <a href="https://unsplash.com/s/photos/astroworld?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
+      </div>
+      
+    </div>
+    <div id="picstick" class="uk-height-viewport uk-inline uk-width-1-1">
+      <div class="uk-container uk-position-center">
+          <p id="intro"><a href="https://www.astroworldfest.com">Astroworld Festival</a> is an annual music festival run by American rapper <a href="https://www.theguardian.com/music/travis-scott">Travis Scott</a>, held in Houston, Texas, at NRG Park, near the former site of Six Flags AstroWorld. The festival was first held in November 2018.<br><br>
+          The 2020 festival was canceled due to the COVID-19 pandemic in Texas. Astroworld Festival 2021 was originally scheduled for November 5–6, 2021. On the first night, <a href="https://abcnews.go.com/Entertainment/astroworld-festival-timeline-tragedy-unfolded/story?id=81036039">a crowd crush occurred</a>, resulting in the deaths of <a href="https://www.theguardian.com/music/2021/dec/16/astroworld-festival-deaths-ruled-accidental">at least ten people</a> and the cancellation of the second night of the festival. <a href="https://www.vulture.com/2021/12/travis-scott-lawsuits-victims-families.html">Lawsuits against Travis Scott</a> and the companies involved in producing the festival are ongoing, as well as a <a href="https://edition.cnn.com/2021/12/23/politics/astroworld-investigation-live-nation/index.html">Congressional investigation.</a><br><br>
+          In the aftermath of the tragedy, whilst the damage was being assessed, conspiracy theories flourished. In particular, accusatiions of the crowd crush being an intentionally orchestrated event in order to perform some kind of ritual human sacrifice swept social media, including Twitter and <a href="https://www.theguardian.com/us-news/2021/nov/09/astroworld-disaster-fuels-wave-of-satanic-conspiracy-theories-on-tiktok">Tiktok.</a></p>
+          <a href="#detail" data-uk-scroll=""><svg width="80" height="80" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#2b323b" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg></a>
+        </div>
+</div>
+    <div class="uk-container uk-height-viewport uk-padding" id="detail">
+      <p>Between the 5th and the 12th of November there were 81,034 tweets about Astroworld. Within that, 1,629 tweets included the word “satanic” or “ritual”. This only accounts for 2% of the overall tweets. This is roughly the same as the top tweeter about Astroworld, Apple Music, who sponsored and live-streamed the event until it was shut down.  The overall tweet rate for the time in question works out to roughly 422 tweets per hour, which has a spike on the 11th November. The distribution of tweets per day is fairly regular, aside from the 5th November (the day before the festival began proper) all days have a tweet rate between 100,000 and 120,000 per day. The tweets references a satanic conspiracy theory have a much more obvious trend that spikes on the 9th November with 468 tweets that day, 28% of the overall tweets.</p>
+      <div id="chart1"></div>
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body">71% of tweets were retweets</div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body">66% of conspiracy tweets were retweets</div>
+          </div>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body">422 tweets about astroworld per hour</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="uk-grid-match uk-child-width-1-2 uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card; row: false">
+      <div class="uk-width-1-1@s uk-width-1-2@m uk-margin">
+        <div uk-sticky="bottom: #pies; media:@l" class="uk-card uk-padding">
+          <p>There was a lot of bot activity mentioning Astroworld, 45% of the top tweeters were bots. There wasn't much bot activity in the satanic discourse, which makes sense with it being a much more specific topic and was not considered newsworthy until the tweet traffic had already built up. What is interesting to note is that the account that made the most unique tweets about astroworld was less than a year old and only contained tweets about astroworld. The uniqueness of each tweet doesn’t suggest bot behaviour, more likely it is what is known as a “sock puppet” account. Accounts like this can be as malicious and deceptive as bots.  However I chose not to remove them from my overall analysis because the accounts were created specifically to comment  on the Astroworld incident, and because they are most likely created by individuals they are relevant. </p>
+          <!-- <div class="uk-child-width-1-2 uk-text-center uk-padding" uk-grid>
+            <div>
+                <div class="uk-card">
+                  <h4>Top AstroWorld Tweeters</h4>
+                  <ul class="uk-list">
+                    <li>AppleMusic</li>
+                    <li>LeakersPost</li>
+                    <li>CAdabag</li>
+                    <li>Notsurewhereto1</li>
+                    <li>kareemslick</li>
+                    <li>thegoddessdoc</li>
+                    <li>AEstrag</li>
+                    <li>JusticAstroVict</li>
+                    <li>DavyV_TV</li>
+                    <li>TheSource</li>
+                    <li>BucFansMatter</li>
+                    <li>TomthunkitsMind</li>
+                  </ul>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card">
+                  <h4>Top Conspiracy Tweeters</h4>
+                  <ul class="uk-list">
+                    <li>Travisastro10</li>
+                    <li>Notsurewhereto1</li>
+                    <li>JusticAstroVict</li>
+                    <li>THECOUNTnews</li>
+                    <li>remixedcat</li>
+                    <li>kareemslick</li>
+                    <li>jlkakak</li>
+                    <li>danbostonboy</li>
+                    <li>busyholm0</li>
+                    <li>uncjay1</li>
+                    <li>Yvette63433535</li>
+                    <li>SiragusaJoyce</li>
+                    <li>SoundwavePromo1</li>
+                    <li>SherrellYah</li>
+                    <li>Tex_Ghost</li>
+                    <li>Y0UNGD1LEMM4</li>
+                    <li>yourstr50336661</li>
+                    <li>thegoddessdoc</li>
+                    <li>TheHorsesMouths</li>
+                    <li>rdiasdevivar</li>
+                    <li>PATD_Trin</li>
+                  </ul>
+                </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="uk-flex-first@l">
+        <div class="uk-card-large" id="chart2"></div>
+      </div>
+      <div>
+        <div class="uk-height-viewport"  id="pies">
+          <div class="uk-card-large" id="chart3"></div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-visible@m"></div>
+      </div>
+    </div>
+
+    <div class="uk-padding"><h2>Timeline</h2>
+    <h3>Friday, 5th November</h3></div>
+      <div class="uk-card uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fans just broke through the fence to get into <a href="https://twitter.com/hashtag/AstroWorld?src=hash&amp;ref_src=twsrc%5Etfw">#AstroWorld</a><a href="https://t.co/mpi70ZzTOs">pic.twitter.com/mpi70ZzTOs</a></p>&mdash; XXL Magazine (@XXL) <a href="https://twitter.com/XXL/status/1456724589560598537?ref_src=twsrc%5Etfw">November 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">10:00am</h4>
+                <p>Concertgoers begin lining up for the festival.</p>
+            </div>
+        </div>
+      </div>
+      <li>
+        <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin  uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yo Astroworld got TOO many people here this shit is ridiculous</p>&mdash; R (@ryysito) <a href="https://twitter.com/ryysito/status/1456751781371842560?ref_src=twsrc%5Etfw">November 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">4:00pm</h4>
+                <p>At this point at least 54 patients had been treated by medical staff according to Houston Police Department</p>
+            </div>
+        </div>
+      </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Astroworld security not playing this year 😭😭 <a href="https://t.co/JTNiPNyXHJ">pic.twitter.com/JTNiPNyXHJ</a></p>&mdash; costa (@andrrusco) <a href="https://twitter.com/andrrusco/status/1456647899035615234?ref_src=twsrc%5Etfw">November 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">8:30pm</h4>
+                <p>Because there was no performances on the festivals second stage, all 50,000 attendees had the oppurunity to assemble outside the main stage for Travis Scott's performance. The packed crowd begins pushing towards the stage</p>
+            </div>
+        </div>
+      </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">HE BROUGHT OUT DRAKE!! <a href="https://twitter.com/hashtag/AstroWorld?src=hash&amp;ref_src=twsrc%5Etfw">#AstroWorld</a></p>&mdash; Jordan Adams (@JordanKAdams97) <a href="https://twitter.com/JordanKAdams97/status/1456818446428168192?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">9:00pm</h4>
+                <p>Travis begins performing, concertgoers in the crowd begin showing signs of distress almost immediately.</p>
+            </div>
+        </div>
+    </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin  uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Get in a fight at Astroworld ✅</p>&mdash; Aidan ‎⎊ (@Aidannnnn21) <a href="https://twitter.com/Aidannnnn21/status/1456832765719101443?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">9:25pm</h4>
+                <p>Travis stopped the show for the first time to draw attention to some one in the crowd who appeared to be unconscious.</p>
+            </div>
+        </div>
+    </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin  uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This astroworld traffic is absurd. HPD can’t do shit right 🙄</p>&mdash; Asia ✨ (@asianicole820) <a href="https://twitter.com/asianicole820/status/1456832853262716928?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">9:30pm</h4>
+                <p>Medical staff responds to someone upresponsive, according to Houston Police Department</p>
+            </div>
+        </div>
+    </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Developing situation as fire trucks and ambulances responding to incident at Astroworld Festival at <a href="https://twitter.com/nrgpark?ref_src=twsrc%5Etfw">@nrgpark</a> <a href="https://twitter.com/KHOU?ref_src=twsrc%5Etfw">@KHOU</a> <a href="https://t.co/1FVwbKVl2f">pic.twitter.com/1FVwbKVl2f</a></p>&mdash; Zack Tawatari (@zacktKHOU) <a href="https://twitter.com/zacktKHOU/status/1456829415363596288?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">9:38pm</h4>
+                <p>Houston Police officers and firefighters respond to reports of mass casualty event at the festival.</p>
+            </div>
+        </div>
+      </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin  uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">people really dying at astroworld, that’s crazy</p>&mdash; mya 🃏 (@fvckbasic_) <a href="https://twitter.com/fvckbasic_/status/1456833023077490691?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">9:42pm</h4>
+                <p>Scott stopped the show for a third time to draw attention to somehow in the crowd who needed help.</p>
+            </div>
+        </div>
+      </div></li>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin  uk-height-max-medium" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bro prayers to the few people that was by me and passed out and Travis didn’t even help🥺❤️❤️❤️ <a href="https://twitter.com/hashtag/astroworld?src=hash&amp;ref_src=twsrc%5Etfw">#astroworld</a></p>&mdash; Donny T FanPage😈 (@DonnyTWomack) <a href="https://twitter.com/DonnyTWomack/status/1456842795860307977?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">10:12pm</h4>
+                <p>Scott finishes the show and leaves the stage. 300 people were treated by medical personell on site, and 25 more were hospitalised.</p>
+            </div>
+        </div>
+      </div></li>
+    </ul>
+    <div class="uk-container"><h3>Saturday, 6th November</h3></div>
+      <li><div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">NEW NORMAL or RITUAL SACRIFICE?—8 dead and 11 cardiac arrests at Travis Scott&#39;s Astroworld Music Festival. 💔💀 <a href="https://t.co/sAXV7tTiM7">pic.twitter.com/sAXV7tTiM7</a></p>&mdash; Alice Liu (@chunkmusic) <a href="https://twitter.com/chunkmusic/status/1457142049933828099?ref_src=twsrc%5Etfw">November 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h4 class="uk-card-title">6:30pm</h4>
+                <p>Suggestions of a demonic sacrifice begin to circulate</p>
+            </div>
+        </div>
+      </div>
+      </li>
+    <div class="uk-container"><h2>Top Retweets</h2>
+    <p>There were high retweet ratios across the board, with 71% of overall tweets being retweets, whereas within the satanic conspiracy subset the retweet rate was 66%. Academics argue that retweets have a sense of extra validity as they cite another source for the information, but the consensus on their trustworthiness is debatable. It is interesting to note that the most retweeted tweets that reference anything satanic or ritual are actually deriding the conspiracy theory rather than spreading misinformation. This does make sense as conspiracy theories are in their nature fringe beleifs, so the conensus on Twitter is that it isn't true. However as we have learnt from the last few years fringe beleifs can still do major damage when they are furtively held.</p>
+    <div class="uk-child-width-1-3" uk-grid>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">people calling astroworld a “demonic ritual” after a bunch of people died just shows how crazy yall get in times of crisis theres nothing spiritual or religious about poor event planning lol</p>&mdash; khary ✰ (@NotKhary) <a href="https://twitter.com/NotKhary/status/1456999017443954694?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Astroworld tragedy wasn’t a fucking ritual. The only thing truly “demonic” about what happened was the way profit and ego were put over human lives.</p>&mdash; Savvy☭ (@sleepisocialist) <a href="https://twitter.com/sleepisocialist/status/1457854288638660609?ref_src=twsrc%5Etfw">November 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ppl are really about to bring back Satanic panic calling the Astroworld tragedy a “demonic ritual” instead of what it really is: a prime example of rich people wanting to get richer by cutting corners on safety and security protocols with no regard for who they endanger.</p>&mdash; WitchyTwitchy (@witchytwitchytv) <a href="https://twitter.com/witchytwitchytv/status/1457115037508771852?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="th" dir="ltr">เกิดเหตุเหยียบกันตายในคอนเสิร์ตของ Travis Scott ในงานเทศกาลดนตรี Astroworld<br><br> - เสียชีวิต 8 ราย<br> - หัวใจหยุดเต้น 11 คน<br> - 300 คนบาดเจ็บต้องเข้ารับการรักษา<br>- ผู้เสียชีวิตมีเด็กชายอายุ 10 ขวบ<a href="https://twitter.com/hashtag/ASTROWORLDFest?src=hash&amp;ref_src=twsrc%5Etfw">#ASTROWORLDFest</a> <a href="https://twitter.com/hashtag/TravisScott?src=hash&amp;ref_src=twsrc%5Etfw">#TravisScott</a> <a href="https://t.co/47VT5Fi44N">pic.twitter.com/47VT5Fi44N</a></p>&mdash; Elämäni (@ElamaniTh)
+            <a href="https://twitter.com/ElamaniTh/status/1456943402356854788?ref_src=twsrc%5Etfw">
+            November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Stop the show&quot; and the staff did nothing. This shit is fucking heartbreaking <a href="https://twitter.com/hashtag/AstroWorld?src=hash&amp;ref_src=twsrc%5Etfw">#AstroWorld</a> vc:<a href="https://twitter.com/JanthonyOlivera?ref_src=twsrc%5Etfw">@JanthonyOlivera</a> <a href="https://t.co/5vVZKLKV7h">pic.twitter.com/5vVZKLKV7h</a></p>&mdash; Ashmely🇩🇴 (@Ashmelym) <a href="https://twitter.com/Ashmelym/status/1457001681376452608?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This astroworld situation is so scary and sad man.</p>&mdash; HOOD VOGUE is tired of poverty (@keyon) <a href="https://twitter.com/keyon/status/1457005045342408705?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+  </div>
+  <div class="uk-container"><h3>Location Data</h3>
+    <p>Location data on Twitter is optional and incredibly subjective as users can enter custom location names, meaning it is incredibly untrustworthy. Despite this, the data that can be found on Twitters use of locations can still yield worthwhile insights, if not accurate to the intended purpose. The conspiracy set of data only had location data on 0.036% of the tweets in the dataset, which is only 59 total tweets. Of those all corresponded to actual locations, predominatly within the US. This makes sense as the incident happened in the US and subsequent conspiracy theories tend to stem from the original location.</p>
+
+    </div>
+  </div>
+    <footer class="uk-margin-large uk-padding">
+      <h4>References:</h4>
+      <div class="caption">Cook, DM, et al. “Twitter Deception and Influence: Issues of Identity, Slacktivism, and Puppetry.” Journal of Information Warfare, vol. 13, no. 1, Peregrine Technical Solutions, 2014, pp. 58–71, https://www.jstor.org/stable/26487011. <br>What Do Retweets Indicate? Results from User Survey and Meta-Review of Research P. T. Metaxas, E. Mustafaraj, K. Wong, L. Zeng, M. O’Keefe, S. Finn Computer Science, Wellesley College</div><br>
+      <p class='uk-text-center'>Bex Sander, 2022 <br>
+        <a href="#start" data-uk-scroll="">to the top</a></p>
+    </footer>
+    <script type="text/javascript">
+      var chart1 = c3.generate({
+        bindto: "#chart1",
+        data: {
+          x: 'x',
+          xFormat: '%Y-%m-%d %H',
+          columns: [
+            ['x','2021-11-05 00','2021-11-05 01','2021-11-05 02','2021-11-05 03','2021-11-05 04','2021-11-05 05','2021-11-05 06','2021-11-05 07','2021-11-05 08','2021-11-05 09','2021-11-05 10','2021-11-05 11','2021-11-05 12','2021-11-05 13','2021-11-05 14','2021-11-05 15','2021-11-05 16','2021-11-05 17','2021-11-05 18','2021-11-05 19','2021-11-05 20','2021-11-05 21','2021-11-05 22','2021-11-06 00','2021-11-06 01','2021-11-06 02','2021-11-06 03','2021-11-06 04','2021-11-06 05','2021-11-06 06','2021-11-06 07','2021-11-06 08','2021-11-06 09','2021-11-06 10','2021-11-06 11','2021-11-06 12','2021-11-06 13','2021-11-06 14','2021-11-06 15','2021-11-06 16','2021-11-06 17','2021-11-06 18','2021-11-06 19','2021-11-06 20','2021-11-06 21','2021-11-06 22','2021-11-07 00','2021-11-07 01','2021-11-07 02','2021-11-07 03','2021-11-07 04','2021-11-07 05','2021-11-07 06','2021-11-07 07','2021-11-07 08','2021-11-07 09','2021-11-07 10','2021-11-07 11','2021-11-07 12','2021-11-07 13','2021-11-07 14','2021-11-07 15','2021-11-07 16','2021-11-07 17','2021-11-07 18','2021-11-07 19','2021-11-07 20','2021-11-07 21','2021-11-07 22','2021-11-08 00','2021-11-08 01','2021-11-08 02','2021-11-08 03','2021-11-08 04','2021-11-08 05','2021-11-08 06','2021-11-08 07','2021-11-08 08','2021-11-08 09','2021-11-08 10','2021-11-08 11','2021-11-08 12','2021-11-08 13','2021-11-08 14','2021-11-08 15','2021-11-08 16','2021-11-08 17','2021-11-08 18','2021-11-08 19','2021-11-08 20','2021-11-08 21','2021-11-08 22','2021-11-09 00','2021-11-09 01','2021-11-09 02','2021-11-09 03','2021-11-09 04','2021-11-09 05','2021-11-09 06','2021-11-09 07','2021-11-09 08','2021-11-09 09','2021-11-09 10','2021-11-09 11','2021-11-09 12','2021-11-09 13','2021-11-09 14','2021-11-09 15','2021-11-09 16','2021-11-09 17','2021-11-09 18','2021-11-09 19','2021-11-09 20','2021-11-09 21','2021-11-09 22','2021-11-10 00','2021-11-10 01','2021-11-10 02','2021-11-10 03','2021-11-10 04','2021-11-10 05','2021-11-10 06','2021-11-10 07','2021-11-10 08','2021-11-10 09','2021-11-10 10','2021-11-10 11','2021-11-10 12','2021-11-10 13','2021-11-10 14','2021-11-10 15','2021-11-10 16','2021-11-10 17','2021-11-10 18','2021-11-10 19','2021-11-10 20','2021-11-10 21','2021-11-10 22','2021-11-11 00','2021-11-11 01','2021-11-11 02','2021-11-11 03','2021-11-11 04','2021-11-11 05','2021-11-11 06','2021-11-11 07','2021-11-11 08','2021-11-11 09','2021-11-11 10','2021-11-11 11','2021-11-11 12','2021-11-11 13','2021-11-11 14','2021-11-11 15','2021-11-11 16','2021-11-11 17','2021-11-11 18','2021-11-11 19','2021-11-11 20','2021-11-11 21','2021-11-11 22','2021-11-12 00','2021-11-12 01','2021-11-12 02','2021-11-12 03','2021-11-12 04','2021-11-12 05','2021-11-12 06','2021-11-12 07','2021-11-12 08','2021-11-12 09','2021-11-12 10','2021-11-12 11','2021-11-12 12','2021-11-12 13','2021-11-12 14','2021-11-12 15','2021-11-12 16','2021-11-12 17','2021-11-12 18','2021-11-12 19','2021-11-12 20','2021-11-12 21','2021-11-12 22'],
+            ['Astroworld Tweets',194,210,185,156,220,148,94,81,53,46,87,92,148,170,280,329,491,482,463,487,491,491,479,498,499,499,498,486,471,490,492,473,454,466,453,455,442,423,447,462,474,470,452,454,452,453,452,452,451,463,445,461,449,435,455,470,453,456,462,461,453,434,448,427,433,427,433,432,431,417,429,448,455,449,459,446,452,449,450,460,464,462,468,468,470,478,474,474,469,481,462,471,476,474,476,469,480,472,451,462,480,437,461,458,466,464,458,403,437,464,438,433,473,458,453,453,457,466,471,467,470,478,478,473,473,488,484,479,487,480,479,484,484,478,484,482,488,491,483,487,487,484,478,478,491,484,481,485,478,487,490,493,492,484,486,486,482,449,479,479,482,476,485,481,484,482,479,479,488,478,479,425,487,492,486,488,484,491,488,486,493,454,405,444],
+            ['Satanic or Ritual Tweets', 0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,2,6,7,8,14,11,7,18,5,5,3,4,3,2,1,2,2,4,6,5,3,2,3,5,2,4,3,6,2,8,9,14,10,6,11,11,9,12,13,8,8,9,20,15,30,13,18,12,9,19,14,19,17,17,31,20,21,21,13,16,9,9,17,29,20,16,36,15,16,30,50,16,27,15,7,5,8,7,10,8,7,19,7,8,9,10,8,9,17,24,13,17,15,15,9,10,9,4,8,21,8,7,20,10,17,10,8,10,7,10,14,11,23,15,9,20,13,4,5,4,5,9,4,6,12,3,5,10,12,5,13,5,9,13,6,5,15,32,8,10,5,8,4,6]
+            ],
+          },
+          point: {
+        show: false
+    },
+            "onmouseover": satan,
+            "onmouseout": reset,
+
+          title: {
+            text: 'Astroworld Tweet Rates'
+          },
+          axis: {
+            x: {
+              type: 'timeseries',
+              tick: {
+                values: ['2021-11-05 00', '2021-11-05 12', '2021-11-06 00', '2021-11-06 12', '2021-11-07 00', '2021-11-07 12', '2021-11-08 00', '2021-11-08 12', '2021-11-09 00', '2021-11-09 12', '2021-11-10 00', '2021-11-10 12', '2021-11-11 00', '2021-11-11 12', '2021-11-12 00', '2021-11-12 12']
+              }
+                  },
+            y: {
+              min: 0,
+              padding: {bottom: 0}
+            }
+                },
+      });
+    function satan() {
+      chart1.unload({
+      ids: 'Astroworld Tweets'
+      });
+    };
+    function reset() {
+      chart1.load({
+        columns: [
+        ['Astroworld Tweets',194,210,185,156,220,148,94,81,53,46,87,92,148,170,280,329,491,482,463,487,491,491,479,498,499,499,498,486,471,490,492,473,454,466,453,455,442,423,447,462,474,470,452,454,452,453,452,452,451,463,445,461,449,435,455,470,453,456,462,461,453,434,448,427,433,427,433,432,431,417,429,448,455,449,459,446,452,449,450,460,464,462,468,468,470,478,474,474,469,481,462,471,476,474,476,469,480,472,451,462,480,437,461,458,466,464,458,403,437,464,438,433,473,458,453,453,457,466,471,467,470,478,478,473,473,488,484,479,487,480,479,484,484,478,484,482,488,491,483,487,487,484,478,478,491,484,481,485,478,487,490,493,492,484,486,486,482,449,479,479,482,476,485,481,484,482,479,479,488,478,479,425,487,492,486,488,484,491,488,486,493,454,405,444]]
+       });
+    };
+    var chart2 = c3.generate({
+      bindto: "#chart2",
+      data: {
+        columns: [
+          ['Human', 10],
+          ['Spam Bots', 3],
+          ['News Aggregators', 6],
+          ["Porn Bots", 1],
+          ["Sock Puppets", 1]
+        ],
+        type: 'pie',
+      },
+      title: {
+        text: "Astroworld Top Tweeters"
+      }
+    });
+    var chart3 = c3.generate({
+      bindto: "#chart3",
+      data: {
+        columns: [
+          ['Human', 17],
+          ['Sock Puppets', 3]
+        ],
+        type: 'pie',
+      },
+      title: {
+        text: "Conspiracy Top Tweeters"
+      },
+
+    })
+  </script>
+  </body>
+</html>
