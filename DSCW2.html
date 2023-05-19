@@ -47,10 +47,10 @@
     </style>
   </head>
   <body>
-    <!-- <div uk-sticky class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(alexander-londono-fyHcBJKawPE-unsplash.jpg);"></div> -->
+    <div class="uk-background-cover uk-height-viewport uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(alexander-londono-fyHcBJKawPE-unsplash.jpg);">
 
     <div id="start" class="uk-height-viewport uk-inline uk-width-1-1">
-      <div class="uk-container uk-position-center">
+      <div class="uk-container uk-position-center uk-overlay-default">
             <h1 class="uk-text-center">Astroworld and the Twitter Conspiracy Theory Rabbit-Hole</h1>
             <h4 class=uk-text-center>By Bex Sander, 17/01/2022</h4>
             <a href="#intro" data-uk-scroll="" class="uk-position-center"><svg width="80" height="80" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#2b323b" stroke-width="1.03" points="16 7 10 13 4 7" class="uk-visible@m"></polyline></svg></a>
@@ -58,11 +58,11 @@
             <div class="uk-text uk-position-top-right">
         <div class="caption">Photo by <a href="https://unsplash.com/@thefirmhtx?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Londoño</a> on <a href="https://unsplash.com/s/photos/astroworld?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
       </div>
-      
     </div>
-    <div id="picstick" class="uk-height-viewport uk-inline uk-width-1-1">
+    </div>
+    <div id="intro" class="uk-height-viewport uk-inline uk-width-1-1">
       <div class="uk-container uk-position-center">
-          <p id="intro"><a href="https://www.astroworldfest.com">Astroworld Festival</a> is an annual music festival run by American rapper <a href="https://www.theguardian.com/music/travis-scott">Travis Scott</a>, held in Houston, Texas, at NRG Park, near the former site of Six Flags AstroWorld. The festival was first held in November 2018.<br><br>
+          <p><a href="https://www.astroworldfest.com">Astroworld Festival</a> was an annual music festival run by American rapper <a href="https://www.theguardian.com/music/travis-scott">Travis Scott</a>, held in Houston, Texas, at NRG Park, near the former site of Six Flags AstroWorld. The festival was first held in November 2018.<br><br>
           The 2020 festival was canceled due to the COVID-19 pandemic in Texas. Astroworld Festival 2021 was originally scheduled for November 5–6, 2021. On the first night, <a href="https://abcnews.go.com/Entertainment/astroworld-festival-timeline-tragedy-unfolded/story?id=81036039">a crowd crush occurred</a>, resulting in the deaths of <a href="https://www.theguardian.com/music/2021/dec/16/astroworld-festival-deaths-ruled-accidental">at least ten people</a> and the cancellation of the second night of the festival. <a href="https://www.vulture.com/2021/12/travis-scott-lawsuits-victims-families.html">Lawsuits against Travis Scott</a> and the companies involved in producing the festival are ongoing, as well as a <a href="https://edition.cnn.com/2021/12/23/politics/astroworld-investigation-live-nation/index.html">Congressional investigation.</a><br><br>
           In the aftermath of the tragedy, whilst the damage was being assessed, conspiracy theories flourished. In particular, accusatiions of the crowd crush being an intentionally orchestrated event in order to perform some kind of ritual human sacrifice swept social media, including Twitter and <a href="https://www.theguardian.com/us-news/2021/nov/09/astroworld-disaster-fuels-wave-of-satanic-conspiracy-theories-on-tiktok">Tiktok.</a></p>
           <a href="#detail" data-uk-scroll=""><svg width="80" height="80" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#2b323b" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg></a>
@@ -70,7 +70,7 @@
 </div>
     <div class="uk-container uk-height-viewport uk-padding" id="detail">
       <p>Between the 5th and the 12th of November there were 81,034 tweets about Astroworld. Within that, 1,629 tweets included the word “satanic” or “ritual”. This only accounts for 2% of the overall tweets. This is roughly the same as the top tweeter about Astroworld, Apple Music, who sponsored and live-streamed the event until it was shut down.  The overall tweet rate for the time in question works out to roughly 422 tweets per hour, which has a spike on the 11th November. The distribution of tweets per day is fairly regular, aside from the 5th November (the day before the festival began proper) all days have a tweet rate between 100,000 and 120,000 per day. The tweets references a satanic conspiracy theory have a much more obvious trend that spikes on the 9th November with 468 tweets that day, 28% of the overall tweets.</p>
-      <div id="chart1"></div>
+      <div class="uk-height-large" id="chart1"></div>
       <div class="uk-child-width-expand@s uk-text-center" uk-grid>
           <div>
               <div class="uk-card uk-card-default uk-card-body">71% of tweets were retweets</div>
@@ -84,9 +84,7 @@
       </div>
     </div>
 
-    <div class="uk-grid-match uk-child-width-1-2 uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card; row: false">
-      <div class="uk-width-1-1@s uk-width-1-2@m uk-margin">
-        <div uk-sticky="bottom: #pies; media:@l" class="uk-card uk-padding">
+        <div class="uk-card uk-padding">
           <p>There was a lot of bot activity mentioning Astroworld, 45% of the top tweeters were bots. There wasn't much bot activity in the satanic discourse, which makes sense with it being a much more specific topic and was not considered newsworthy until the tweet traffic had already built up. What is interesting to note is that the account that made the most unique tweets about astroworld was less than a year old and only contained tweets about astroworld. The uniqueness of each tweet doesn’t suggest bot behaviour, more likely it is what is known as a “sock puppet” account. Accounts like this can be as malicious and deceptive as bots.  However I chose not to remove them from my overall analysis because the accounts were created specifically to comment  on the Astroworld incident, and because they are most likely created by individuals they are relevant. </p>
           <!-- <div class="uk-child-width-1-2 uk-text-center uk-padding" uk-grid>
             <div>
@@ -138,19 +136,8 @@
             </div>
           </div> -->
         </div>
-      </div>
-      <div class="uk-flex-first@l">
         <div class="uk-card-large" id="chart2"></div>
-      </div>
-      <div>
-        <div class="uk-height-viewport"  id="pies">
           <div class="uk-card-large" id="chart3"></div>
-        </div>
-      </div>
-      <div>
-        <div class="uk-card uk-visible@m"></div>
-      </div>
-    </div>
 
     <div class="uk-padding"><h2>Timeline</h2>
     <h3>Friday, 5th November</h3></div>
@@ -294,14 +281,7 @@
         </div>
     </div>
   </div>
-  <div class="uk-container"><h3>Location Data</h3>
-    <p>Location data on Twitter is optional and incredibly subjective as users can enter custom location names, meaning it is incredibly untrustworthy. Despite this, the data that can be found on Twitters use of locations can still yield worthwhile insights, if not accurate to the intended purpose. The conspiracy set of data only had location data on 0.036% of the tweets in the dataset, which is only 59 total tweets. Of those all corresponded to actual locations, predominatly within the US. This makes sense as the incident happened in the US and subsequent conspiracy theories tend to stem from the original location.</p>
-
-    </div>
-  </div>
     <footer class="uk-margin-large uk-padding">
-      <h4>References:</h4>
-      <div class="caption">Cook, DM, et al. “Twitter Deception and Influence: Issues of Identity, Slacktivism, and Puppetry.” Journal of Information Warfare, vol. 13, no. 1, Peregrine Technical Solutions, 2014, pp. 58–71, https://www.jstor.org/stable/26487011. <br>What Do Retweets Indicate? Results from User Survey and Meta-Review of Research P. T. Metaxas, E. Mustafaraj, K. Wong, L. Zeng, M. O’Keefe, S. Finn Computer Science, Wellesley College</div><br>
       <p class='uk-text-center'>Bex Sander, 2022 <br>
         <a href="#start" data-uk-scroll="">to the top</a></p>
     </footer>
